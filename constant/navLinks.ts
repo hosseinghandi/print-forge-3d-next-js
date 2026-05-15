@@ -6,7 +6,7 @@ export const navLinks: NavLinks[] = [
     label: "3d Models",
   },
   {
-    link: "#",
+    link: "about",
     label: "About",
   },
 ];

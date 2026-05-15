@@ -3,6 +3,7 @@
 @theme {
   --color-foreground: #1e1e1e;
   --color-foreground-mate: #606060;
+  --color-border-mate: #dddddd;
   --color-hover: #f77429;
 
   /* global */
@@ -15,12 +16,22 @@
   --spacing-medium: 1rem;
   --spacing-large: 1.25rem;
   --spacing-wide: 1.5rem;
-  --spacing-section-gap: 4rem;
+  --spacing-section: 4rem;
 
   /* elements */
   --spacing-nav: 10vh;
-}
 
+  /* size */
+  --size-icons: 1.5rem;
+
+  /* texts */
+  --text-titles-label: 1.25rem;
+  --text-titles-large: clamp(2.5rem, 1.48vi + 2.15rem, 4.38rem);
+  --text-titles-section: 2rem;
+  --text-titles-card: 1.375rem;
+  --text-body-medium: 1.25rem;
+  --text-body-large: clamp(1.5rem, 0.2vi + 1.45rem, 1.75rem);
+}
 *,
 html,
 body {
@@ -29,4 +40,5 @@ body {
 
 body {
   min-width: 375px;
+  font-size: 1rem;
 }
