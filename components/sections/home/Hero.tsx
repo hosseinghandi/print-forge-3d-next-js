@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       className="h-full flex flex-row justify-between items-center
-        max-lg:flex-col max-lg:gap-section lg:gap-wide"
+        max-lg:flex-col max-lg:gap-section lg:gap-wide max-lg:mb-wide"
       aria-label="Hero section"
     >
       <div className="flex flex-col min-w-1/2 max-lg:order-2 text-titles-label max-w-[700px]">
@@ -26,11 +26,7 @@ export default function Hero() {
       </div>
 
       <div className="w-1/2 max-w-[600px] min-w-[450px] md:min-w-[350px] max-md:min-w-[300px] max-lg:order-1">
-        <Image
-          loading="lazy"
-          src={homeCover}
-          alt="An image includes 3d printer works"
-        />
+        <Image src={homeCover} alt="An image includes 3d printer works" />
       </div>
     </section>
   );

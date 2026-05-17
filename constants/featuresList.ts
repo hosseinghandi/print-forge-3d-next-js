@@ -1,5 +1,5 @@
 import { iconList } from "./iconList";
-import type { FeaturesList } from "@/types/listTypes";
+import type { FeaturesList } from "@/types/list";
 
 export const featuresList: FeaturesList[] = [
   {

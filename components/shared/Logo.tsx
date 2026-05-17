@@ -1,11 +1,11 @@
 import logoLarge from "../../public/logoLarge.png";
 import logoSmall from "../../public/logoSmall.png";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Logo() {
   return (
     <>
-      <a aria-label="navigate to Homepage" href="/">
+      <Link aria-label="navigate to Homepage" href="/">
         <Image
           src={logoLarge}
           aria-hidden="true"
@@ -18,7 +18,7 @@ export default function Logo() {
           alt=""
           className="h-[5vh] w-fit sm:hidden"
         />
-      </a>
+      </Link>
     </>
   );
 }

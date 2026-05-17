@@ -8,9 +8,9 @@ export default function AboutSection() {
     >
       <div className="w-full xl:max-w-[500px] xl:size-4/11 lg:size-5/11 max-md:order-2">
         <Image
-          loading="lazy"
+          placeholder="blur"
           src={imgAbout}
-          alt="An image containing 3d printing producation"
+          alt="A set of 3d printing producation"
           className="h-full w-full object-cover "
         />
       </div>

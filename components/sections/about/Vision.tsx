@@ -29,14 +29,7 @@ export default function Vision() {
         to share your creations, PrintForge provides the tools and community to
         support your journey in 3D printing.
       </p>
-      <Image
-        loading="lazy"
-        src={printer}
-        alt="Printer nozzle icon"
-        width={150}
-        height={150}
-        className="mt-wide"
-      />
+      <Image src={printer} alt="Printer nozzle icon" className="mt-wide" />
     </section>
   );
 }
