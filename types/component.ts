@@ -6,4 +6,5 @@ export type CardProps = {
 
 export type ModelGridProps = {
   models: ModelsListStructure[];
+  title: string;
 };

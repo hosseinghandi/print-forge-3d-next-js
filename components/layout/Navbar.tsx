@@ -1,13 +1,18 @@
+"use client";
+import { usePathname } from "next/navigation";
 import { navLinks } from "../../constants/navLinks";
 import Logo from "../shared/Logo";
 import Link from "next/link";
+import { getActiveLink } from "@/lib/utils/getActiveLink";
 export default function Navbar() {
+  const param = usePathname();
+  const activeLinkClass = "text-hover border-b-2 ";
   return (
     <nav
       aria-label="Main nav"
       className="
           fixed top-0 left-0 flex flex-row w-full items-center justify-between
-          bg-white px-[calc(var(--spacing-global)-1vw)] py-4 h-nav z-50"
+          bg-white px-global py-4 h-nav z-50"
     >
       <Logo />
       <ul
@@ -18,9 +23,14 @@ export default function Navbar() {
           <li
             key={label}
             className="flex flex-col items-center 
-                hover:text-hover"
+            hover:text-hover"
           >
-            <Link href={link} aria-label={aria} replace>
+            <Link
+              href={link}
+              aria-label={aria}
+              replace
+              className={`${getActiveLink(link, param) ? activeLinkClass : ""}`}
+            >
               {label}
             </Link>
             {false && <div aria-hidden="true" className="outline w-full"></div>}

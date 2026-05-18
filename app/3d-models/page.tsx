@@ -4,9 +4,9 @@ import { SideFilter, ModelGrid } from "@/components";
 export default async function ModelsList() {
   const models = await getAllModels();
   return (
-    <div className="flex flex-col ">
+    <div className="w-full">
       <SideFilter />
-      <ModelGrid models={models} />
+      <ModelGrid title="3D models" models={models} />
     </div>
   );
 }

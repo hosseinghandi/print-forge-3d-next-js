@@ -3,7 +3,7 @@ import { iconList } from "@/constants/iconList";
 import Pill from "../shared/Pill";
 import Image from "next/image";
 export default function Card({ details }: CardProps) {
-  const { id, name, description, likes, image, category, dateAdded } = details;
+  const { name, description, likes, category } = details;
   return (
     <article
       aria-labelledby="card-title"
