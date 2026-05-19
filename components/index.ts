@@ -8,3 +8,5 @@ export { default as Card } from "../components/shared/Card";
 export { default as Pill } from "../components/shared/Pill";
 export { default as SideFilter } from "../components/shared/SideFilter";
 export { default as ModelGrid } from "../components/layout/ModelGrid";
+export { default as FilterLinks } from "../components/shared/FilterLinks";
+export { default as ModelDetail } from "./sections/models/ModelDetail";

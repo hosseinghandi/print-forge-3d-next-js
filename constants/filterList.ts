@@ -1,7 +1,6 @@
 import type { FilterList } from "@/types/list";
 
 export const filtersList: FilterList = [
-  { label: "All", slug: "all" },
   { label: "3D Printer", slug: "3d-printer" },
   { label: "Art", slug: "art" },
   { label: "Education", slug: "education" },

@@ -15,7 +15,8 @@ export default function Card({ details }: CardProps) {
         <Image
           src="/about.png"
           alt={description}
-          fill
+          width={1250}
+          height={1250}
           className="object-cover rounded-t-radius"
         />
       </div>

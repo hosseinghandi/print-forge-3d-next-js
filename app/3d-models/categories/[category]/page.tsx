@@ -1,16 +1,16 @@
+import { getAllModels } from "@/lib/models";
+import { getCategoryBySlug } from "@/lib/categories";
+import { SideFilter, ModelGrid } from "@/components";
 import type { ParamsProps } from "@/types/page";
-import { getAllcategory, getCategoryBySlug } from "@/lib/categories";
-import { ModelGrid, SideFilter } from "@/components";
-export default async function CategoryPage({ params }: ParamsProps) {
+export default async function CategorizedPage({ params }: ParamsProps) {
   const { category } = await params;
-  const models =
-    category === "all"
-      ? await getAllcategory()
-      : await getCategoryBySlug(category);
+  const models = !category
+    ? await getAllModels()
+    : await getCategoryBySlug(category);
   return (
     <div className="w-full">
       <SideFilter />
-      <ModelGrid title={category.toUpperCase()} models={models} />
+      <ModelGrid title={category} models={models} category={category} />
     </div>
   );
 }
